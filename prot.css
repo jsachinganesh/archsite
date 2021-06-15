@@ -1,0 +1,148 @@
+.portfolio-section--1{
+    position: relative;
+    height: max-content;
+    margin-bottom: 5rem;
+}
+
+.portfolioSideText{
+    position: absolute;
+    top: 9rem;
+    left: -70px;
+
+    transform: rotate(90deg);
+    font-family: monospace;
+    letter-spacing: 1rem;
+
+    text-transform: uppercase;
+
+    font-weight: 100;
+    font-size: 1.54rem;
+}
+
+.ports{
+    margin: 0 100px 0 100px;
+   
+    height: max-content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    transition: all .2s ease;
+    transform: translateY(600px);
+
+}
+
+.card{
+    height: 600px;
+    background-color: darkgrey;
+
+    cursor: pointer;
+    transition: all .2s;
+    
+}
+
+.card-1{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-seraph.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-2{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-eebox.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-3{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-federal.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-4{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-del-sol.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-5{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-prototype.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-6{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-228b.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-7{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-edelweiss.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-8{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-netcry.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card-9{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-hypers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-10{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-sxiv.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-11{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-trinity.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-12{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/portfolio/desktop/image-paramour.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+    .ports{
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 2rem;
+    }
+    .ports .card{
+        height: 300px;
+    }
+    .portfolioSideText{
+        display: none;
+    }
+}

@@ -1,0 +1,318 @@
+.aboutSection--1{
+    height:120vh;
+    position: relative;
+    
+    margin: 0 100px 0 100px;
+}
+
+.photoContainerAbout{
+    width: 100%;
+    height: 120vh;
+    /* background-color: aqua */
+}
+
+.photoAbout{
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/image-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textWhiteBox{
+    width: 60%;
+    height: 600px;
+    margin-left: 40%;
+    background: white;
+
+    transform: translateY(-600px);
+
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.textSmallBox{
+    width: 70%;
+    height: 80%;
+    padding-top: 5rem;
+}
+
+.textSmallBox h1{
+    font-size: 3rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+.textSmallBox p{
+    margin-top: 5rem;
+    font-family: 'Spartan', sans-serif;
+    color: #60636D;
+}
+
+.aboutHeading{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 1400%;
+    color: #EEEFF4;
+    transform: translate(-100px,-100px);
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.aboutSide{
+    left: -10rem;
+}
+
+/* section 2 */
+
+.section--about-2{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    margin-top: 5rem;
+}
+
+.backAbout{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/image-heritage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.section2Text{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 3rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+.h1About{
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+    color: #1B1D23;
+}
+
+.pAbout p{
+    margin: 1rem 0 1rem 0;
+    color: #7D828F;
+    
+}
+
+.section--3-about{
+    height: 100vh;
+    /* background-color: chartreuse; */
+
+    margin-top: 12rem;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.section--3AboutText{
+    /* background-color: coral; */
+
+    font-size: 2rem;
+}
+
+.sectionBoxAboutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.leaderAbout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.section3AboutBoxLeader{
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+}
+
+.leadersText{
+    margin: 1rem 0;
+}
+
+.leadersText h3{
+    margin: 0.2rem 0;
+}
+
+.leadersTextLight{
+    color: #C8CCD8;
+}
+
+.overlayAbout{
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+    transform: translateY(100%);
+    transition: all .2s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.section3AboutBoxLeader:hover > .overlayAbout{
+    transform: translateY(0);
+}
+
+.section3AboutBoxLeader-1{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/avatar-jake.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section3AboutBoxLeader-2{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/avatar-thompson.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section3AboutBoxLeader-3{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/avatar-jackson.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section3AboutBoxLeader-4{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/about/desktop/avatar-maria.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (min-width: 1400px) {
+    .aboutSection--1{
+        height: 80vh;
+    }
+    .photoContainerAbout{
+        height: 80vh;
+    }
+
+    .section--about-2,.section--3-about{
+        height: 80vh;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .aboutSection--1{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        height: 40vh
+    }
+
+    .photoContainerAbout{
+        height: 40vh;
+    }
+
+    .photoAbout{
+        width: 100%;
+     
+    }
+
+    .aboutHeading{
+        display: none;
+    }
+
+    .textWhiteBox{
+        transform: translateY(0);
+        margin: 0;
+
+        /* background: darkcyan; */
+        width: 100vw;
+        height:max-content;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .textSmallBox{
+        padding-top: 0;
+    }
+    .textSmallBox p{
+        margin: 1.5rem;
+    }
+
+    .textSmallBox h1{
+        font-size: 2rem;
+    }
+
+    /* section 2 */
+
+    .section--about-2{
+        margin-top: 20rem;
+        grid-template-columns: 1fr;
+        /* margin-top: 5rem; */
+        padding-top: 0;
+    }
+
+    .section2Text{
+        padding: 1rem;
+    }
+
+    .backAbout{
+        display: none;
+    }
+
+    /* section 3 */
+    .section--3-about{
+        margin: 0;
+        grid-template-columns: 1fr;
+        height: max-content;
+    }
+    .section--3AboutText{
+        height: max-content;
+        width: 100vw;
+        font-size: 1.5rem;
+        padding: 3rem;
+        
+    }
+
+    .leaderAbout{
+        grid-template-columns:1fr;
+        
+    }
+
+    .sectionBoxAboutContainer{
+        height: 300px;
+        padding: 2rem;
+    }
+}

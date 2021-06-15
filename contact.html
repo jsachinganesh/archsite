@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="prot.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="./scripts/contact.js" type="module"></script>
+    <script src="./scripts/about.js" type="module"></script>
+    <script src="./scripts/portfolio.js" type="module"></script>
+    <script src="./scripts/app.js" type="module" ></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="brand-title">
+                    <a href="/"><img class="logoNavbar" src="./assets/logo.svg" alt=""></a>
+                </div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a  href="./about.html">About Us</a></li>
+                    <li><a class="activePage" href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+        <section class="aboutSection--1 contantSection portfolio-section--1">
+            <div class="photoContainerAbout">
+                <div class="photoAbout contatPhonePhoto">
+                
+                </div>
+            </div>
+            <div class="textWhiteBox">
+                <div class="aboutHeading">
+                    Contact
+                </div>
+                <div class="textSmallBox">
+                    <h1>Tell us about your project</h1>
+                    <p>We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!</p>
+                </div>
+            </div>
+            
+            <div class="portfolioSideText aboutSide">CONTACT</div>
+        </section>
+
+        <section class="sectionContantDetails">
+            <div class="borderTopFun"></div>
+            <div class="sectionContantDetailsBox topthis">
+                <h1 >Contact</h1>
+                <h1>Details</h1>
+            </div>
+            <div class="sectionContantDetailsBox officeDetails">
+                <div class="office">Main Office</div>
+                <div class="detailsBoxMail">
+                    <div class="mailName">
+                        <ul>
+                            <li>Mail:</li>
+                            <li>Address:</li>
+                            <li>Phone:</li>
+                        </ul>
+                    </div>
+                    <div class="mailValues">
+                        <ul>
+                            <li>archone@mail.com</li>
+                            <li>1892 Chenoweth Drive TN</li>
+                            <li>123-456-3451</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                 <div class="btnMap">View on Map 👉</div>
+            </div>
+            <div class="sectionContantDetailsBox officeDetails">
+                <div class="office">Office II</div>
+                <div class="detailsBoxMail">
+                    <div class="mailName">
+                        <ul>
+                            <li>Mail:</li>
+                            <li>Address:</li>
+                            <li>Phone:</li>
+                        </ul>
+                    </div>
+                    <div class="mailValues">
+                        <ul>
+                            <li>archone@mail.com</li>
+                            <li>3399 Wines Lane TX</li>
+                            <li>832-123-4321</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                 <div class="btnMap">View on Map 👉</div>
+            </div>
+            
+        </section>
+
+        <!-- <section id="contantSectionMap">
+
+        </section> -->
+        <section id='map' style='width: 100vw; height: 100vh;'></section>
+
+        <section class="formContact">
+            <div class="formContactBox formContactBoxText">
+                <h1>Connect</h1>
+                <h1>with us</h1>
+            </div>
+            <div class="formContactBox">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Message">
+                    <button class="formContactBtn">➤</button>
+                </form>
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <div class="logoArea">
+                <h1>Arch</h1>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="">Profolio</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <a href="" class="footerBtn">See Our Protfolio ➜ </a>
+            </div>
+            <div class=""></div>
+            
+         </footer>
+    </div>
+   
+   
+    
+</body>
+</html>

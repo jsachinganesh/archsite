@@ -1,0 +1,201 @@
+.contatPhonePhoto{
+    background: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%),
+    url('./assets/contact/desktop/image-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contantSection .aboutHeading{
+    font-size: 10rem;
+}
+
+.sectionContantDetails{
+    height: max-content;
+    width: 100vw;
+
+    margin-top: 5rem;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    position: relative;
+}
+
+.borderTopFun{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 2px;
+    width: 100px;
+    background-color: #1B1D23;
+}
+
+.sectionContantDetailsBox h1{
+    font-size: 3rem;
+    color: #1B1D23;
+    
+}
+
+.topthis{
+    margin-top: 2rem;
+}
+
+.officeDetails{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+    
+}
+
+.office{
+    color: #47484d;
+}
+
+.detailsBoxMail{
+    color:#7D828F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsBoxMail div ul {
+    list-style: none;
+}
+
+.office,.detailsBoxMail,.btnMap{
+    margin: 1rem 0;
+    
+}
+
+.btnMap{
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.btnMap:hover{
+    transform: translateY(-5px);
+}
+
+.map{
+    width: 100vw;
+    height: 100vh;
+
+
+    padding: 3rem;
+}
+
+.formContact{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    padding: 3rem;
+}
+
+.formContactBoxText{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.formContactBox{
+    position: relative;
+}
+
+.formContactBtn{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #1B1D23;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.formContactBtn:hover{
+    background-color: #47484d;
+    transform: scale(1.2);
+}
+
+.formContactBox form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.formContactBox form input{
+    width: 100%;
+    margin: 3rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+
+    border:none;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1400px) {
+    .map{
+        width: 100vw;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .contantSection{
+        height: max-content;
+    }
+
+    .contantSection .textSmallBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+    }
+
+    .contantSection .textSmallBox p{
+        margin: 1rem 0;
+    }
+
+    .sectionContantDetails{
+        grid-template-columns: 1fr;
+    }
+
+    .contantSectionMap{
+        padding: 0;
+        height: 50vh;
+    }
+
+    .formContact{
+        grid-template-columns: 1fr;
+        padding: 0;        
+    }
+    .formContactBtn{
+        width: 40%;
+        bottom: -10%;
+       
+
+        border-radius: 25px;
+    }
+    
+}
